@@ -1,0 +1,97 @@
+
+#experiencia {
+    padding-top: 15rem;
+    margin: auto;
+}
+.experiencia__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 12rem;
+    gap: 2rem;
+}
+
+.experiencia__container > div {
+    background-color: var(--color-bg-variant);
+    border-radius: 0 0 2rem 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.experiencia__container > div:hover {
+    background: transparent;
+    border-color: var(--color-bg-primary);
+    cursor: default;
+}
+
+.experiencia__contenido {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.experiencia__contenido:hover {
+    transform: translateY(-1rem);
+}
+.experiencia__nombre {
+    display: flex;
+    flex-direction: Column;
+    justify-content: center;
+}
+
+#experiencia__nombre-puesto {
+    padding: 2rem 0.5rem;
+    border-radius: 0 0 2rem 2rem;
+    background-color: var(--color-bg);
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+
+#experiencia__nombre-empresa {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    color: var(--color-primary-variant);
+    font-weight: 500;
+}
+
+#experiencia__nombre-fecha {
+    font-size: 1.2rem;
+    color: var(--color-primary-variant);
+    font-weight: 500;
+    font-style: italic;
+}
+
+.experiencia__programas {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+.experiencia__descripcion {
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin: 2rem 5rem;
+}
+
+.iconos__experiencia {
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .experiencia__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width:764px) {
+    .experiencia__container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+

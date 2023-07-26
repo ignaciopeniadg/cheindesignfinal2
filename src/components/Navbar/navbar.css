@@ -1,0 +1,224 @@
+.nav__principal {
+    display: flex;
+    align-items: center;
+
+
+}
+
+#navbar {
+    justify-content: center;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1rem 3rem 1rem 3rem;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    top: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4rem;
+    backdrop-filter: blur(15px);
+    gap: 1rem;
+}
+
+#navbar li {
+    display: flex;
+    flex-direction: row;
+    background: transparent;
+    padding: 1.2rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-primary);
+    font-size: 2rem;
+}
+
+.nav__secundaria ul{
+    width: 8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 2rem 3rem 2rem 3rem;
+    position: fixed;
+    left: 85%;
+    transform: translate(-50%);
+    top: 3rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4rem;
+    backdrop-filter: blur(15px);
+}
+
+#nav__text {
+    display: none;
+    font-size: 1.5rem;
+}
+.logo {
+    width: 2.3rem;
+}
+.logo:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+button {
+    background: transparent;
+    color: var(--color-primary);
+    font-size: 2rem;
+}
+
+.burger {
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 2.5rem;
+    position: fixed;
+    left: 15%;
+    transform: translate(-50%);
+    top: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    border-radius: 4rem;
+    backdrop-filter: blur(15px);
+    font-size: 2rem;
+}
+
+.nav__categorias {
+    display: flex;
+    align-items: center;
+
+
+}
+
+#navbar__categorias {
+    justify-content: center;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1rem 3rem 1rem 3rem;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 13rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4rem;
+    backdrop-filter: blur(15px);
+    gap: 1rem;
+}
+
+#navbar__categorias li {
+    display: flex;
+    flex-direction: row;
+    background: transparent;
+    padding: 1.2rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-primary);
+}
+
+.navbar__categorias ul{
+    width: 8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 2rem 3rem 2rem 3rem;
+    position: fixed;
+    left: 85%;
+    transform: translate(-50%);
+    top: 3rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4rem;
+    backdrop-filter: blur(15px);
+}
+
+#navbar__categorias__text {
+    font-size: 1.2rem;
+}
+
+
+@media(min-width: 764px){
+    .burger{
+        display: none;
+    }
+    #nav__text {
+        display: none;
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .nav__secundaria ul{
+        left: 90%;
+    }
+}
+
+
+@media(max-width: 764px){
+    #navbar {
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1.2rem;
+    position: fixed;
+    left: -15%;
+    transform: translate(-50%);
+    top: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4rem;
+    backdrop-filter: blur(15px);
+    gap: 0.2rem;
+    transition: 0.3s ease-in-out;
+}
+
+#navbar li {
+    display: flex;
+    flex-direction: row;
+    background: transparent;
+    padding: 1.2rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-primary);
+    font-size: 2rem;
+}
+#nav__text {
+    font-size: 1.5rem;
+}
+
+#navbar.active{
+    left: 15%;
+}
+.burger {
+    cursor: pointer;
+}
+
+.nav__secundaria ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    position: fixed;
+    left: 85%;
+    transform: translate(-50%);
+    top: 3rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4rem;
+    backdrop-filter: blur(15px);
+}
+
+}

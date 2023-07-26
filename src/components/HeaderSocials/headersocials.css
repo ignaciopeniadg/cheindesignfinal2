@@ -1,0 +1,21 @@
+
+.header__socials {
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 2rem 3rem 2rem 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 3rem;
+    border-radius: 4rem;
+    backdrop-filter: blur(15px);
+}
+
+.iconos__rrss {
+    font-size: 2.2rem;
+}

@@ -1,0 +1,57 @@
+.contador {
+    margin: 0 auto;
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contador__botones {
+    display: flex;
+    flex-direction: row;
+    width: 8rem;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4rem;
+    backdrop-filter: blur(15px);
+    margin: auto;
+    text-align: center;
+}
+
+.btn__contador {
+    padding: 0.5rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.btn__contador:hover {
+    border-radius: 2rem;
+    background: var(--color-bg-variant);
+}
+
+.btn__agregar-al-carrito {
+    font-family: 'montserrat';
+    color: var(--color-primary);
+    background-color: var(--color-variant);
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding: 0.8rem 2rem 0.8rem 2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+}
+
+.btn__agregar-al-carrito:hover {
+    background: var(--color-primary);
+    color: var(--color-bg-variant);
+    border-color: transparent;
+}
+
+.num__contador {
+    font-size: 1.3rem;
+    font-weight: 700;
+}

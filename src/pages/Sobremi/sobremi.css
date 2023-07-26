@@ -1,0 +1,153 @@
+#sobremi {
+    padding-top: 15rem;
+    margin: auto;
+}
+.sobremi__container {
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+}
+
+.sobremi__yo {
+    width: 90%;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background: #7c7c7b;
+    display: grid;
+    place-items: center;
+}
+
+.sobremi__yo-img {
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(10deg);
+    transition: var(--transition);
+}
+
+.sobremi__yo-img:hover {
+    transform: rotate(0);
+}
+
+.sobremi__yo-img img {
+    width: 100%;
+}
+
+.sobremi__contenido {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 0;
+}
+
+.sobremi__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.sobremi__card {
+    background-color: var(--color-bg-variant);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.sobremi__card:hover {
+    transform: translateY(-1rem);
+    background: transparent;
+    border-color: var(--color-bg-primary);
+    cursor: default;
+}
+
+.sobremi__icon {
+    color: #7c7c7b;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.sobremi__card h5 {
+    font-size: 1.9rem;
+}
+
+.sobremi__card small {
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+.sobremi__container p {
+    text-align: left;
+    font-style: oblique;
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin: 4rem 4rem 0 0;
+}
+
+.btn {
+    margin-top: 3rem;
+    
+}
+
+@media screen and (max-width: 1024px) {
+
+    section {
+        margin-top: 14rem;
+    }
+
+    .sobremi__container {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .sobremi__yo {
+        width: 50%;
+        margin: 0rem auto 6rem;
+    }
+    .sobremi__contenido p {
+        margin-top: 4rem;
+        text-align: center;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .btn {
+        align-self: center;
+        margin-bottom: 13rem;
+    }
+}
+
+@media screen and (max-width:764px) {
+
+    section {
+        margin-top: 7rem;
+    }
+
+    .sobremi__yo {
+        display: none;
+    }
+
+    .sobremi__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .sobremi__contenido {
+        display: flex;
+        flex-direction: column;
+        margin: 1.5rem 0;
+    }
+
+    .sobremi__contenido p {
+        margin-top: 4rem;
+        text-align: center;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .btn {
+        align-self: center;
+        margin-bottom: 13rem;
+    }
+}

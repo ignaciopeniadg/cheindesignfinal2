@@ -1,0 +1,18 @@
+.container{
+    width: 98%;
+    margin: auto;
+}
+
+.detail {
+    margin-top: 15rem;
+    display: grid;
+    grid-template-columns: 35% 55%;
+    gap: 10%;
+}
+.detail__image {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+}

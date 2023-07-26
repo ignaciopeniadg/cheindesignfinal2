@@ -1,0 +1,141 @@
+
+#estudios {
+    padding-top: 15rem;
+    margin: auto;
+}
+
+.estudios__container {
+    display: grid;
+    grid-template-columns: 50% 35%;
+    gap: 15%;
+    padding-bottom: 15rem;
+}
+
+.estudios__yo{
+        width: 90%;
+        aspect-ratio: 1/1;
+        border-radius: 2rem;
+        background: #7c7c7b;
+        display: grid;
+        place-items: center;
+    }
+
+.estudios__yo-img {
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(10deg);
+    transition: var(--transition);
+}
+
+#estudios__yo-img {
+    border-radius: 2rem;
+}
+
+.estudios__yo-img:hover {
+    transform: rotate(0);
+}
+
+.estudios__yo-img img {
+    transform: translateY(-5rem);
+    width: 100%;
+}
+
+.estudios__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.estudios__contenido {
+    background-color: var(--color-bg-variant);
+    border-radius: 0 0 2rem 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.estudios__contenido:hover {
+    transform: translateY(-1rem);
+    background: transparent;
+    border-color: var(--color-bg-primary);
+    cursor: default;
+}
+.estudios__nombre {
+    display: flex;
+    flex-direction: Column;
+    justify-content: center;
+}
+
+
+#estudios__nombre-clase {
+    padding: 2rem 0.5rem;
+    border-radius: 0 0 2rem 2rem;
+    background-color: var(--color-bg);
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.estudios__list-item{
+    margin-top: 2rem;
+}
+
+#estudios__nombre-empresa {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+#estudios__nombre-fecha {
+    font-size: 1.2rem;
+    color: var(--color-primary-variant);
+    font-weight: 500;
+    font-style: italic;
+}
+
+.estudios__programas {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+.estudios__descripcion {
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin: 2rem 5rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .estudios__container {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 5rem;
+    }
+    .estudios__yo {
+        width: 50%;
+        margin: 0rem auto 6rem;
+    }
+
+    .estudios__grid{
+        margin-bottom: 15rem;
+    }
+}
+
+
+@media screen and (max-width:764px) {
+    .estudios__yo{
+        display: none;
+    }
+    .estudios__grid{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+}
