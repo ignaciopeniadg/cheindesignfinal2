@@ -16,7 +16,7 @@ export const ItemListContainer = ({ texto }) => {
         const queryCollection = collection(querydb, 'servicios');
 
         if (categoriaId) {
-            const queryFilter = query(queryCollection, where('category', '==', categoriaId), where())
+            const queryFilter = query(queryCollection, where('category', '==', categoriaId))
             getDocs(queryFilter)
                 .then(res => setData(res.docs.map(product => ({ id: res.id, ...res.data() }))))
         } else {
