@@ -17,7 +17,7 @@ const Cart = () => {
             phone: '2131231'
         },
         items: cart.map(product=> ({ id: product.id, nombre: product.nombre, precio: product.precio, quantity: product.quantity})),
-        total: totalPrice,
+        total: totalPrice(),
     }
 
     const handleClick = () => {
@@ -41,7 +41,7 @@ const Cart = () => {
                 cart.map(product => <ItemCart key={product.id} product={product} />)
             }
             <p>
-                total: {totalPrice()}
+                total: {totalPrice()},
             </p>
             <button onClick={handleClick}>Emitir compra</button>
         </>

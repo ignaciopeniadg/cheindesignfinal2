@@ -18,10 +18,10 @@ export const ItemListContainer = ({ texto }) => {
         if (categoriaId) {
             const queryFilter = query(queryCollection, where('category', '==', categoriaId))
             getDocs(queryFilter)
-                .then(res => setData(res.docs.map(product => ({ id: res.id, ...res.data() }))))
+                .then(res => setData(res.docs.map(res => ({ id: res.id, ...res.data() }))))
         } else {
             getDocs(queryCollection)
-                .then(res => setData(res.docs.map(product => ({ id: res.id, ...res.data() }))))
+                .then(res => setData(res.docs.map(res => ({ id: res.id, ...res.data() }))))
         }
     }, [categoriaId])
 
@@ -31,7 +31,6 @@ export const ItemListContainer = ({ texto }) => {
             <h5>¿Qué estabas buscando?</h5>
             <h2>Servicios</h2>
             <div id='container__itemlistcontainer'>
-                <Title greeting={texto} />
                 <ItemList className="item-list" data={data} />
             </div>
         </div>
