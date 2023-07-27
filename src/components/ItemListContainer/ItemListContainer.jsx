@@ -28,8 +28,8 @@ export const ItemListContainer = ({ texto }) => {
 
     return (
         <div className='itemlist'>
-            <h5>Repaso sobre mis</h5>
-            <h2>Estudios</h2>
+            <h5>¿Qué estabas buscando?</h5>
+            <h2>Servicios</h2>
             <div id='container__itemlistcontainer'>
                 <Title greeting={texto} />
                 <ItemList className="item-list" data={data} />
