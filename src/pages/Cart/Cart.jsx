@@ -16,7 +16,7 @@ const Cart = () => {
             email: 'ignaciopeniadg@gmail.com',
             phone: '2131231'
         },
-        items: cart.map(product=> ({ id: product.id, nombre: product.nombre, precio: product.precio, quantity: product.quantity})),
+        items: cart.map(product => ({ id: product.id, nombre: product.nombre, precio: product.precio, quantity: product.quantity })),
         total: totalPrice(),
     }
 
@@ -24,27 +24,34 @@ const Cart = () => {
         const db = getFirestore();
         const ordersCollection = collection(db, 'orders');
         addDoc(ordersCollection, order)
-        .then (({ id }) => console.log(id))
+            .then(({ id }) => console.log(id))
     }
 
     if (cart.length === 0) {
         return (
-            <>
+            <section className='container' id='carrito-class'>
                 <p>No hay elementos en el carrito</p>
-                <Link to='/servicios'>Hacer compra</Link>
-            </>
+                <Link to='/servicios'><button className='btn'>Hacer compra</button></Link>
+            </section>
         );
     }
     return (
-        <>
-            {
-                cart.map(product => <ItemCart key={product.id} product={product} />)
-            }
-            <p>
-                total: {totalPrice()},
-            </p>
-            <button onClick={handleClick}>Emitir compra</button>
-        </>
+        <section className='container' id='carrito-class'>
+
+            <div className='productos-carrito'>
+                {
+                    cart.map(product => <ItemCart key={product.id} product={product} />)
+                }
+            </div>
+
+            <div className='carrito-titular'>
+                <p>
+                    TOTAL: {totalPrice()}
+                </p>
+                <button className='btn' onClick={handleClick}>Emitir compra</button>
+            </div>
+
+        </section>
 
     )
 }

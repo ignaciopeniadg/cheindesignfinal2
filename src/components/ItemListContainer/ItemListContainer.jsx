@@ -27,13 +27,13 @@ export const ItemListContainer = ({ texto }) => {
 
 
     return (
-        <div className='itemlist'>
+        <section className='itemlist'>
             <h5>¿Qué estabas buscando?</h5>
             <h2>Servicios</h2>
             <div id='container__itemlistcontainer'>
                 <ItemList className="item-list" data={data} />
             </div>
-        </div>
+        </section>
     )
 }
 

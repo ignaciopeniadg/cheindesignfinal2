@@ -3,11 +3,12 @@
     padding: 2rem 0.5rem;
     border-radius: 0 0 2rem 2rem;
     background-color: var(--color-bg);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 300;
 }
 
 .item-servicio {
+    width: 30rem;
     background-color: var(--color-bg-variant);
     border-radius: 0 0 2rem 2rem;
     border: 1px solid transparent;
@@ -33,3 +34,9 @@
     width: 23rem;
 }
 
+#item-servicio__precio {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    font-weight: 500;
+}

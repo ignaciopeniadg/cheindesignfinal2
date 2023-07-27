@@ -12,7 +12,7 @@ const Item = ({ info }) => {
             <div>
                 <img className="item-servicio-img" src={info.img} alt='producto'/>
             </div>
-            <p>US${info.precio}</p>
+            <p id='item-servicio__precio'>US$ {info.precio}</p>
         </Link>
     )
 }
