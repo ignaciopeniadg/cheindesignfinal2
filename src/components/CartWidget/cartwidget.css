@@ -1,0 +1,12 @@
+.cartwidget {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cartwidget span {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
